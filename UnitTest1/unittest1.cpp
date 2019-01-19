@@ -36,38 +36,38 @@ namespace UnitTest1
 
 		}
 
-		TEST_METHOD(TestMethod1)//ÊäÈë¸ñÊ½²»ÕıÈ·
+		TEST_METHOD(TestMethod1)//è¾“å…¥æ ¼å¼ä¸æ­£ç¡®
 		{
 			argc = 1;
 			int result = main(argc, argv);
-			//assert(result == 1);
+			assert(result == 1);
 		}
 
-		TEST_METHOD(TestMethod2)   //ÊäÈëÊı×Ö¹ı´ó
+		TEST_METHOD(TestMethod2)   //è¾“å…¥æ•°å­—è¿‡å¤§
 		{
 			argc = 3;
 			argv[1] = "100000";
 			int result = main(argc, argv);
-			//assert(result == 2);
+			assert(result == 2);
 		}
 
-		TEST_METHOD(TestMethod3)  //¼ì²éÊäÈëÄ£Ê½1Ê±ÊÇ·ñÊ¹ÓÃµÄÊÇ"^"
+		TEST_METHOD(TestMethod3)  //æ£€æŸ¥è¾“å…¥æ¨¡å¼1æ—¶æ˜¯å¦ä½¿ç”¨çš„æ˜¯"^"
 		{
 			argv[1] = "100";
 			argv[2] = "1";
 			int result = main(argc, argv);
-			//assert(result == 3);
+			assert(result == 3);
 		}
 
-		TEST_METHOD(TestMethod4)  //¼ì²éÊäÈëÄ£Ê½2Ê±ÊÇ·ñÊ¹ÓÃµÄÊÇ¡°**¡±
+		TEST_METHOD(TestMethod4)  //æ£€æŸ¥è¾“å…¥æ¨¡å¼2æ—¶æ˜¯å¦ä½¿ç”¨çš„æ˜¯â€œ**â€
 		{
 			argv[1] = "100";
 			argv[2] = "2";
 			int result = main(argc, argv);
-			//assert(result == 4);
+			assert(result == 4);
 		}
 
-		TEST_METHOD(TestMethod5)//¼ì²éÊäÈëÖØ¸´µÄËÄÔòÔËËãÌâÄ¿£¬½á¹ûÊÇ·ñÌáÊ¾ÖØĞÂÉú³É
+		TEST_METHOD(TestMethod5)//æ£€æŸ¥è¾“å…¥é‡å¤çš„å››åˆ™è¿ç®—é¢˜ç›®ï¼Œç»“æœæ˜¯å¦æç¤ºé‡æ–°ç”Ÿæˆ
 		{
 			Operation M;
 			string str = "3+(2+1)=";
@@ -77,7 +77,7 @@ namespace UnitTest1
 			assert((result1 != result2) == 1);
 		}
 
-		TEST_METHOD(TestMethod6)//¼ì²éÊäÈë´øÀ¨ºÅµÄËÄÔòÔËËãÌâÄ¿£¬½á¹ûÊÇ·ñÕıÈ·
+		TEST_METHOD(TestMethod6)//æ£€æŸ¥è¾“å…¥å¸¦æ‹¬å·çš„å››åˆ™è¿ç®—é¢˜ç›®ï¼Œç»“æœæ˜¯å¦æ­£ç¡®
 		{
 			Operation M;
 			string str = "3+(2+1)=";
@@ -87,7 +87,7 @@ namespace UnitTest1
 		}
 
 
-		TEST_METHOD(TestMethod7)//¼ì²éÊäÈë´ø'^'ËÄÔòÔËËãÌâÄ¿£¬½á¹ûÊÇ·ñÕıÈ·
+		TEST_METHOD(TestMethod7)//æ£€æŸ¥è¾“å…¥å¸¦'^'å››åˆ™è¿ç®—é¢˜ç›®ï¼Œç»“æœæ˜¯å¦æ­£ç¡®
 		{
 			Operation M;
 			string str = "3^(2+1)=";
@@ -97,7 +97,7 @@ namespace UnitTest1
 		}
 
 
-		TEST_METHOD(TestMethod8)//¼ì²éÊäÈë´ø'**'ĞÍµÄ³Ë·½µÄËÄÔòÔËËãÌâÄ¿£¬½á¹ûÊÇ·ñÕıÈ·
+		TEST_METHOD(TestMethod8)//æ£€æŸ¥è¾“å…¥å¸¦'**'å‹çš„ä¹˜æ–¹çš„å››åˆ™è¿ç®—é¢˜ç›®ï¼Œç»“æœæ˜¯å¦æ­£ç¡®
 		{
 			Operation M;
 			string str = "3**(2+1)=";
@@ -106,7 +106,7 @@ namespace UnitTest1
 			assert((answer == 27) == 1);
 		}
 
-		TEST_METHOD(TestMethod9)//¼ì²éÊäÈë¸´ÔÓµÄËÄÔòÔËËãÌâÄ¿£¬½á¹ûÊÇ·ñÕıÈ·
+		TEST_METHOD(TestMethod9)//æ£€æŸ¥è¾“å…¥å¤æ‚çš„å››åˆ™è¿ç®—é¢˜ç›®ï¼Œç»“æœæ˜¯å¦æ­£ç¡®
 		{
 			Operation M;
 			string str = "3**(2+1)/3*2=";
@@ -115,7 +115,7 @@ namespace UnitTest1
 			assert((answer == 18) == 1);
 		}
 
-		TEST_METHOD(TestMethod10)//¼ì²é½á¹û²»ÊÇÕûÊıµÄËÄÔòÔËËã£¬½á¹ûÊÇ·ñÕıÈ·
+		TEST_METHOD(TestMethod10)//æ£€æŸ¥ç»“æœä¸æ˜¯æ•´æ•°çš„å››åˆ™è¿ç®—ï¼Œç»“æœæ˜¯å¦æ­£ç¡®
 		{
 			Operation M;
 			string str = "3**(2+1)/4=";
@@ -124,9 +124,9 @@ namespace UnitTest1
 			assert((answer == 6.75) == 1);
 		}
 
-		TEST_METHOD(TestMethod11)//¼ì²éÊäÈë½á¹ûÎªÕæ·ÖÊı£¬ÅĞ¶ÏÊÇ·ñÕıÈ·
+		TEST_METHOD(TestMethod11)//æ£€æŸ¥è¾“å…¥ç»“æœä¸ºçœŸåˆ†æ•°ï¼Œåˆ¤æ–­æ˜¯å¦æ­£ç¡®
 		{
-			//judge()º¯Êı±äĞÎ
+			//judge()å‡½æ•°å˜å½¢
 			int judge = 0;
 			char syb;
 			double as1 = 0, as2 = 0;
@@ -137,7 +137,7 @@ namespace UnitTest1
 			int flag = 1;
 			int dot = 0;
 
-			if (as[0] == '-')//¸ºÊı
+			if (as[0] == '-')//è´Ÿæ•°
 			{
 				syb = 1;
 			}
@@ -166,7 +166,7 @@ namespace UnitTest1
 				}
 
 			}
-			//¼ÆËãÊäÈëµÄ×îÖÕ½á¹û
+			//è®¡ç®—è¾“å…¥çš„æœ€ç»ˆç»“æœ
 			if (flag == 1)
 				final_ans = as1;
 			else if (flag == 2)
@@ -177,7 +177,7 @@ namespace UnitTest1
 			if (syb == 1)
 				final_ans = 0 - final_ans;
 
-			//ÅĞ¶ÏÊäÈë½á¹ûÊÇ·ñÕıÈ·
+			//åˆ¤æ–­è¾“å…¥ç»“æœæ˜¯å¦æ­£ç¡®
 			if (flag == 0 || final_ans != answer)
 			{
 				judge = 0;
@@ -190,9 +190,9 @@ namespace UnitTest1
 			assert(judge == 1);
 		}
 
-		TEST_METHOD(TestMethod12)//¼ì²éÊäÈë½á¹ûÎª¸ºÊı£¬ÅĞ¶ÏÊÇ·ñÕıÈ·
+		TEST_METHOD(TestMethod12)//æ£€æŸ¥è¾“å…¥ç»“æœä¸ºè´Ÿæ•°ï¼Œåˆ¤æ–­æ˜¯å¦æ­£ç¡®
 		{
-			//judge()º¯Êı±äĞÎ
+			//judge()å‡½æ•°å˜å½¢
 			int judge = 0;
 			char syb;
 			double as1 = 0, as2 = 0;
@@ -204,7 +204,7 @@ namespace UnitTest1
 			int flag = 1;
 			int dot = 0;
 
-			if (as[0] == '-')//¸ºÊı
+			if (as[0] == '-')//è´Ÿæ•°
 			{
 				syb = 1;
 			}
@@ -233,7 +233,7 @@ namespace UnitTest1
 				}
 
 			}
-			//¼ÆËãÊäÈëµÄ×îÖÕ½á¹û
+			//è®¡ç®—è¾“å…¥çš„æœ€ç»ˆç»“æœ
 			if (flag == 1)
 				final_ans = as1;
 			else if (flag == 2)
@@ -244,7 +244,7 @@ namespace UnitTest1
 			if (syb == 1)
 				final_ans = 0 - final_ans;
 
-			//ÅĞ¶ÏÊäÈë½á¹ûÊÇ·ñÕıÈ·
+			//åˆ¤æ–­è¾“å…¥ç»“æœæ˜¯å¦æ­£ç¡®
 			if (flag == 0 || final_ans != answer)
 			{
 				judge = 0;
