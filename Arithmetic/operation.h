@@ -12,6 +12,7 @@ private:
 	double ans[2000] = { 0 };
 	int ansnum = 0;
 public:
+	int checknum = 0;
 	Operation()
 	{
 		out.open("question.txt");
@@ -25,5 +26,9 @@ public:
 	void allocate(deque<char>& coll1, stack<char>& coll2, deque<char>& coll3);
 	void calculate(deque<char>& coll3, stack<double>& coll4);
 	void judge();
+	double getans()
+	{
+		return ans[0];
+	}
 
 };

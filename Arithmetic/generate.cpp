@@ -145,6 +145,10 @@ void Operation::Generate(int mode, int N)
 		repeat = solve(str);
 		if (repeat == 1)
 			N++;
-
+		for (int j = 0; j < len; j++)
+		{
+			if (str[j] == '^')
+				checknum = 1;
+		}
 	}
 }
